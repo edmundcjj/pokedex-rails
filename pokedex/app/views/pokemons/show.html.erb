@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Displaying <strong><%= @pokemon.name %></strong> stats</h1>
+    <p>
+      <strong>Id:</strong>
+      <%= @pokemon.id %>
+    </p>
+
+    <p>
+      <strong>Num:</strong>
+      <%= @pokemon.num %>
+    </p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @pokemon.name %>
+    </p>
+
+    <p>
+      <strong>Img:</strong>
+      <%= @pokemon.img %>
+    </p>
+
+    <p>
+      <strong>Height:</strong>
+      <%= @pokemon.height %>
+    </p>
+
+    <p>
+      <strong>Weight:</strong>
+      <%= @pokemon.weight %>
+    </p>
+
+    <p>
+      <strong>Candy:</strong>
+      <%= @pokemon.candy %>
+    </p>
+
+    <p>
+      <strong>Candy Count:</strong>
+      <%= @pokemon.candy_count %>
+    </p>
+
+    <p>
+      <strong>Egg:</strong>
+      <%= @pokemon.egg %>
+    </p>
+
+    <p>
+      <strong>Average Spawns:</strong>
+      <%= @pokemon.avg_spawns %>
+    </p>
+
+    <p>
+      <strong>Spawn Time:</strong>
+      <%= @pokemon.spawn_time %>
+    </p>
+
+    <%= link_to 'Edit Pokemon', edit_pokemon_path(@pokemon) %>
+    <p>
+      <%= link_to 'Delete Pokemon', pokemon_path(@pokemon),
+                   method: :delete,
+                   data: { confirm: 'Are you sure?' } %>
+    </p>
+  </body>
+</html>

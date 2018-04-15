@@ -6,6 +6,7 @@
   </head>
   <body>
     <h1>List of Pokemons</h1>
+    <h3><%= link_to 'Create New Pokemon', new_pokemon_path %></h3><br>
     <% @pokemons.each do |pokemon| %>
       <p><%= link_to pokemon.name, pokemon_path(pokemon) %></p>
     <% end %>
