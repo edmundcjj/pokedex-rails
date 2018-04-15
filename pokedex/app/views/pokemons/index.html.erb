@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>List of Pokemons</h1>
+    <% @pokemons.each do |pokemon| %>
+      <p><%= link_to pokemon.name, pokemon_path(pokemon) %></p>
+    <% end %>
+  </body>
+</html>
